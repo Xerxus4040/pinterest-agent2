@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "AI Pinterest Agent Companion",
+  "version": "1.0.0",
+  "description": "Companion dashboard for the academy AI Pinterest publishing service.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://YOUR-DOMAIN.vercel.app/*"],
+  "action": {
+    "default_title": "AI Pinterest Agent",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
