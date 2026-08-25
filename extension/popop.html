@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Pinterest Agent</title>
+<style>
+body{width:340px;margin:0;padding:16px;font-family:system-ui;background:#f7f7f9;color:#17202a}
+h2{margin:0 0 12px}.card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:14px;margin-bottom:10px}
+button{width:100%;padding:10px;border:0;border-radius:8px;background:#d60023;color:#fff;font-weight:700;margin-top:8px}.secondary{background:#334155}
+#log{font-size:12px;white-space:pre-wrap;max-height:180px;overflow:auto}
+.ok{color:#067647}.bad{color:#b42318}
+</style>
+</head>
+<body>
+<h2>AI Pinterest Agent</h2>
+<div class="card">
+  <div>Backend: <span id="backend">Checking…</span></div>
+  <div>Google Drive: <span id="drive">Checking…</span></div>
+  <div>Pinterest: <span id="pinterest">Checking…</span></div>
+  <div>Automation: <span id="automation">Checking…</span></div>
+</div>
+<button id="start">Start</button>
+<button id="pause" class="secondary">Pause</button>
+<button id="process" class="secondary">Process One</button>
+<div class="card"><b>Log</b><div id="log"></div></div>
+<script src="popup.js"></script>
+</body>
+</html>
